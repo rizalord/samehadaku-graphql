@@ -3,9 +3,6 @@ var scraperjs = require("scraperjs");
 class MainController {
   constructor() {}
 
-  /**
-   * PATH = '/'
-   */
   home = (req, res) => {
     var page =
       typeof req.params.page == "undefined"

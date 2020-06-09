@@ -21,7 +21,7 @@ export default {
         app.use(SeasonSchema.routes(), SeasonSchema.allowedMethods());              // route: /season
         app.use(DateReleaseSchema.routes(), DateReleaseSchema.allowedMethods());    // route: /season
         app.use(ListAnimeSchema.routes(), ListAnimeSchema.allowedMethods());        // route: /list-anime
-        app.use(BlogCategorySchema.routes(), BlogCategorySchema.allowedMethods());  // route: /list-anime
-        app.use(TagSchema.routes(), TagSchema.allowedMethods());                    // route: /list-anime
+        app.use(BlogCategorySchema.routes(), BlogCategorySchema.allowedMethods());  // route: /blog-category
+        app.use(TagSchema.routes(), TagSchema.allowedMethods());                    // route: /tag
     }
 }

@@ -19,7 +19,7 @@ export default {
         app.use(AnimeEpsSchema.routes(), AnimeEpsSchema.allowedMethods());          // route: /anime/eps
         app.use(SearchSchema.routes(), SearchSchema.allowedMethods());              // route: /search
         app.use(SeasonSchema.routes(), SeasonSchema.allowedMethods());              // route: /season
-        app.use(DateReleaseSchema.routes(), DateReleaseSchema.allowedMethods());    // route: /season
+        app.use(DateReleaseSchema.routes(), DateReleaseSchema.allowedMethods());    // route: /date-release
         app.use(ListAnimeSchema.routes(), ListAnimeSchema.allowedMethods());        // route: /list-anime
         app.use(BlogCategorySchema.routes(), BlogCategorySchema.allowedMethods());  // route: /blog-category
         app.use(TagSchema.routes(), TagSchema.allowedMethods());                    // route: /tag

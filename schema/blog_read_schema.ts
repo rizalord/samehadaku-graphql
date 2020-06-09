@@ -32,10 +32,7 @@ const resolvers = {
   Query: {
     getData: async function getRootData(parent: any, { id }: any) {
       const url = `https://samehadaku-rest-api.herokuapp.com/blog/read/${id}`;
-      return await axiod.get(url).then((res) => {
-        console.log(res.data);
-        return res.data;
-      });
+      return await axiod.get(url).then((res) => res.data);
     },
   },
 };
